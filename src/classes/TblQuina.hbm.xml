@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 31, 2017 10:18:19 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="classes.TblQuina" table="tblQuina" catalog="quina" optimistic-lock="version">
+        <id name="concurso" type="int">
+            <column name="concurso" />
+            <generator class="assigned" />
+        </id>
+        <property name="primeiraDez" type="java.lang.Integer">
+            <column name="primeira_dez" />
+        </property>
+        <property name="segundaDez" type="java.lang.Integer">
+            <column name="segunda_dez" />
+        </property>
+        <property name="terceiraDez" type="java.lang.Integer">
+            <column name="terceira_dez" />
+        </property>
+        <property name="quartaDez" type="java.lang.Integer">
+            <column name="quarta_dez" />
+        </property>
+        <property name="quintaDez" type="java.lang.Integer">
+            <column name="quinta_dez" />
+        </property>
+        <property name="ganhadoresQuina" type="java.lang.Integer">
+            <column name="ganhadores_quina" />
+        </property>
+        <property name="rateioQuina" type="java.lang.Double">
+            <column name="rateio_quina" precision="22" scale="0" />
+        </property>
+        <property name="ganhadoresQuadra" type="java.lang.Integer">
+            <column name="ganhadores_quadra" />
+        </property>
+        <property name="rateioQuadra" type="java.lang.Double">
+            <column name="rateio_quadra" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
